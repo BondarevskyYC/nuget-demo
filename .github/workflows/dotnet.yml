@@ -33,5 +33,5 @@ jobs:
     - name: Publish
       run: |
         dotnet nuget add source --username ${{github.repository_owner}} --password ${{ github.token }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/${{github.repository_owner}}/index.json"
-        dotnet nuget push "bin/Release/SourceCraft.08.28.25.001.Test.1.1.0.nupkg" --source "github"
+        dotnet nuget push "bin/Release/SourceCraft.08.28.25.001.Test.1.0.0.nupkg" --source "github"
 
